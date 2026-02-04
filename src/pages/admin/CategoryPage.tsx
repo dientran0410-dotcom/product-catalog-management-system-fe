@@ -72,6 +72,7 @@ const CategoryPage = () => {
         
         if (data.status === "SUCCESS") {
           setCategories(data.payload);
+          categoriesData = data.payload;
         } else {
           const errorMsg = data.error?.details || "Lỗi không xác định";
           toast.error(`Lỗi: ${errorMsg}`);
