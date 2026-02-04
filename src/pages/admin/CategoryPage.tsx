@@ -70,6 +70,7 @@ const CategoryPage = () => {
       if (response && response.data) {
         const data = response.data;
         
+        
         if (data.status === "SUCCESS") {
           setCategories(data.payload);
           categoriesData = data.payload;
